@@ -1,0 +1,12 @@
+# @format
+
+services:
+  - type: web
+    name: flask-redirect-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn flaskRedirectApp:app
+    plan: free
+    envVars:
+      - key: FLASK_ENV
+        value: production

@@ -8,4 +8,4 @@ def redirect_to_new_apk():
     return redirect("https://www.youtube.com/results?search_query=how+to+use+expired+link+to+direct+to+a+link+i+want", code=302)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=False)
